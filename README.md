@@ -19,7 +19,7 @@ Instrucciones para la Implementación Instrucciones de Implementación
 
 1: Clonar el archivo de repositorio.
 
-git clone https://github.com/AnthonyGamez28/primerproyecto-docker.git
+git clone https://github.com/AnthonyGamez28/primerproyecto-docker.git.
 cd primerproyecto-docker
 
 2. Elaborar y poner en marcha los contenedores.

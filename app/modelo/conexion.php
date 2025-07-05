@@ -8,30 +8,24 @@
 
             }
         }
-        public function getConexion() {
-    $intentos = 5;
-    $espera = 2; // segundos entre intentos
-
-    while ($intentos > 0) {
-        try {
-            $url = "{$this->datos['driver']}";
-            $url .= ":host={$this->datos['host']};port={$this->datos['port']}";
-            $url .= ";dbname={$this->datos['database']}";
-            $url .= ";charset={$this->datos['charset']}";
-
-            $this->cnx = new PDO($url, $this->datos['user'], $this->datos['pass']);
-            return $this->cnx;
-        } catch (Throwable $e) {
-            $intentos--;
-            if ($intentos <= 0) {
-                http_response_code(500);
-                echo json_encode(["error" => $e->getMessage()]);
-                exit;
-            }
-            sleep($espera); // espera antes de intentar otra vez
-        }
-    }
+       public function getConexion(){
+            try{
+                $url = "{$this->datos['driver']}";
+                $url .= ":host={$this->datos['host']}:{$this->datos['port']}";
+                $url .= ";dbname={$this->datos['database']}";
+                $url .= ";charset={$this->datos['charset']}";
+                
+                $this->cnx= new PDO($url,$this->datos['user'],$this->datos['pass']);
+                return $this->cnx;
+            }catch(Throwable $e){
+    http_response_code(500); // Opcional, marca como error
+    echo json_encode(["error" => $e->getMessage()]);
+    exit;
 }
+        }
+
+
+
 
     }
 

@@ -4,7 +4,7 @@ Este repositorio contiene una aplicación web desarrollada con **PHP 8.2 con Apa
 
 ---
 
-## 🧱 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **PHP 8.2 (con Apache)**: Lenguaje backend y servidor web.
 - **MySQL 5.7**: Motor de base de datos relacional.
@@ -14,7 +14,7 @@ Este repositorio contiene una aplicación web desarrollada con **PHP 8.2 con Apa
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 ### 1. Clonar el repositorio
 

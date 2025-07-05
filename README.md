@@ -1,4 +1,4 @@
-#Docker aplicación PHP con MySQL
+## Docker aplicación PHP con MySQL
 Este repositorio incluye una aplicación web creada con PHP 8.2 y Apache, junto con una base de datos MySQL 5.7, todo ello ejecutado a través de Docker y Docker Compose.
 
 
